@@ -1,2 +1,2 @@
 # Video-Downloader
-# is browser extenssion
+ Video Downloader is browser extenssion
