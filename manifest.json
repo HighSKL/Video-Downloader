@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+
+  "name": "YouTube Video Downloader",
+  "description": "This extenssion add button, which can help you downlad any video from youtube. Button shows near subscribe button",
+  "version": "1.0",
+
+  "action": {
+    "default_icon": "img/vd.png"
+  },
+  "icons": {
+    "16": "img/vd.png",
+    "48": "img/vd.png",
+    "128": "img/vd.png"
+  },
+  "content_scripts":[
+    {
+      "js":[
+        "content.js"
+      ],
+      "css":[
+        "content.css"
+      ],
+      "matches":[
+        "https://www.youtube.com/*"
+      ]
+    }
+  ],
+  "permissions":[
+    
+    "tabs",
+    "activeTab",
+    "scripting",
+    "storage"
+    
+  ],
+  "background":{
+    "service_worker":"background.js"
+  }
+}
+
+

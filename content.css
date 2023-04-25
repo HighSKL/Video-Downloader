@@ -1,0 +1,25 @@
+#download-button{
+    background-color: #FD292F;
+    border: 0;
+    color: white;
+    animation: downloadButtonVisible .5s ease;
+    animation-fill-mode: forwards;
+    border-radius: 20px;
+    margin-left: 2%;
+    padding: 1.45vh 5%;
+    transition: .5s ease;
+    font-weight: 600;
+}
+
+#download-button:hover{
+    transform: scale(.9);
+}
+
+@keyframes downloadButtonVisible {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
